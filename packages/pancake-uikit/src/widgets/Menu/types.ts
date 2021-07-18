@@ -22,6 +22,7 @@ export interface PushedProps {
 
 export interface NavTheme {
   background: string;
+  hover: string;
 }
 
 export interface LinkStatus {
@@ -58,7 +59,7 @@ export interface PanelProps {
 
 export interface NavProps extends PanelProps {
   account?: string;
-  login?: Login;
+  login: Login;
   profile?: Profile;
-  logout?: () => void;
+  logout: () => void;
 }

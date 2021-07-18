@@ -29,7 +29,6 @@ it("renders correctly", () => {
       outline: 0;
       padding: 0 16px;
       width: 100%;
-      border: 1px solid #d7caec;
     }
 
     .c1::-webkit-input-placeholder {
@@ -74,7 +73,6 @@ it("renders correctly", () => {
       padding-left: 0;
       padding-right: 0;
       text-align: right;
-      border: none;
     }
 
     .c2::-webkit-input-placeholder {
@@ -104,7 +102,7 @@ it("renders correctly", () => {
           class="c1 c2"
           inputmode="decimal"
           min="0"
-          pattern="^[0-9]*[.,]?[0-9]{0,18}$"
+          pattern="^[0-9]*[.,]?[0-9]*$"
           placeholder="0.0"
           scale="md"
           value="14"

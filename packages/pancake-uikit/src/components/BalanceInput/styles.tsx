@@ -18,7 +18,6 @@ export const StyledInput = styled(Input)`
   padding-left: 0;
   padding-right: 0;
   text-align: right;
-  border: none;
 
   ::placeholder {
     color: ${({ theme }) => theme.colors.textSubtle};

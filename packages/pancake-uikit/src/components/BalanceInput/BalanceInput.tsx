@@ -9,9 +9,7 @@ const BalanceInput: React.FC<BalanceInputProps> = ({
   onUserInput,
   currencyValue,
   inputProps,
-  innerRef,
   isWarning = false,
-  decimals = 18,
   ...props
 }) => {
   const handleOnChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -23,13 +21,12 @@ const BalanceInput: React.FC<BalanceInputProps> = ({
   return (
     <StyledBalanceInput isWarning={isWarning} {...props}>
       <StyledInput
-        pattern={`^[0-9]*[.,]?[0-9]{0,${decimals}}$`}
+        pattern="^[0-9]*[.,]?[0-9]*$"
         inputMode="decimal"
         min="0"
         value={value}
         onChange={handleOnChange}
         placeholder={placeholder}
-        ref={innerRef}
         {...inputProps}
       />
       {currencyValue && (

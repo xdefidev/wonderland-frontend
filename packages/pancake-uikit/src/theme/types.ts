@@ -34,7 +34,6 @@ export type Gradients = {
   blue: string;
   violet: string;
   violetAlt: string;
-  gold: string;
 };
 
 export type Colors = {
@@ -59,14 +58,13 @@ export type Colors = {
   text: string;
   textDisabled: string;
   textSubtle: string;
-  disabled: string;
+  borderColor: string;
 
   // Gradients
   gradients: Gradients;
 
-  // Additional colors
+  // Brand colors
   binance: string;
-  overlay: string;
 };
 
 export type ZIndices = {
